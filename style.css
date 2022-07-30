@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    --btn-color: #9c1da0;
+    --txt-color: #f8ecf9;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    color: var(--txt-color);
+    /* background-color: aqua; */
+    /* padding: 3rem 5rem; */
+}
+
+section[aria-label="navbar"]{
+    height: 13vh;
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    background-color: #000000;
+    align-items: center;
+    width: 100vw;
+}
+
+.navbar div:first-child{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .line{
+    width: .1vw;
+    border: 0.1rem solid var(--txt-color);
+    border-radius: 2rem;
+    transform: rotate(180deg);
+    height: 5rem;
+}
+
+.navbar .grow-list{
+    width: 40vw;
+}
+
+.navbar .grow-list .list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 13vh;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar .grow-list .list .list-item{
+    position: relative;
+    height: 2vh;
+}
+
+.navbar .grow-list .list .list-item:first-child::after{
+    content: "";
+    background-image: url("./assets/drop.png");
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0rem;
+    left: 4rem; 
+}
+
+.navbar div:last-child{
+    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar div .button-small{
+    border: transparent;
+    padding: 1rem 4rem;
+    border-radius: .5rem;
+    background-color: var(--btn-color);
+    color: var(--txt-color);
+    font-size: 1.6rem;
+}
+
+
+section[aria-label="hero"]{
+    height: 83vh;
+    /* background-color:yellow; */
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hero{
+    display: flex;
+    /* background-color: violet; */
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+    flex-direction: column;
+}
+
+.hero .hero-heading{
+    /* background-color: turquoise; */
+    height: 23rem;
+    width: 50vw;
+    text-align: center;
+    font-size: 6rem;
+    color: var(--txt-color);
+}
+
+.hero .hero-description{
+    /* background-color: brown; */
+    height: 15rem;
+    width: 40vw;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--txt-color);
+}
+
+.hero .button-large{
+    border: transparent;
+    padding: 2rem 4rem;
+    border-radius: .5rem;
+    background-color: var(--btn-color);
+    color: var(--txt-color);
+    font-size: 2rem;
+    font-weight: 700;
+    box-shadow: 2px 3px 2px 0 rgba(7, 7, 7, 0.3);
+}
